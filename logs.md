@@ -26,10 +26,10 @@
 		- The security logs help detect and investigate incidents. These logs provide information on the security-related activities in the system.
 		- Examples 
 			- Authentication events  
-		- Authorization events  
-		- Security Policy changes events  
-		- User Account changes events 
-		-  Abnormal Activity events
+			- Authorization events  
+			- Security Policy changes events  
+			- User Account changes events 
+			-  Abnormal Activity events
 	- **Access**
 		- The Access logs provide detailed information about the access to different resources. These resources can be of different types, providing us with information on their access.
 		- Examples
@@ -45,5 +45,6 @@
 			- User Activity events  
 			- Policy Enforcement events
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTg4NTQyNSw0NTkwMTcwNzZdfQ==
+eyJoaXN0b3J5IjpbNTA5MTM0NzY3LC0zMDE4ODU0MjUsNDU5MD
+E3MDc2XX0=
 -->
