@@ -17,6 +17,7 @@
 		- -n : Specify the number of packets to be processed or read. Snort will stop after reading the specified number of packets.
 
 - **IDS/IPS mode** 
+	- -c : Remember to put the conf or rules file to be used
 	- -N : Disable logging.
 	- -D : Background mode.
 	- -A : Alert modes
@@ -24,9 +25,9 @@
 		- *Fast mode displays the alert message, timestamp, source and destination IP addresses*, along with port numbers.
 		- **Console**: Provides fast style alerts on the console screen.
 		- **cmg:** CMG style,  basic header details with payload in hex and text format.
-		- **None:** Disabling alerting.
+		- **None:** Disabling alerting. However, it still logs the traffic and creates a log file in binary dump format.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NzM2NTExLC03NTEyMTI4NiwtMTg4MT
-c2MDQ1OCwtMTU0MjMzNzM0MywxNjI0NjMxNDk0LC05MjIyMzcw
-MjddfQ==
+eyJoaXN0b3J5IjpbOTE2MzMyMDQ5LDg2OTczNjUxMSwtNzUxMj
+EyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzczNDMsMTYyNDYzMTQ5
+NCwtOTIyMjM3MDI3XX0=
 -->
