@@ -1,5 +1,5 @@
 ## Snort
-- **Basics**
+- **Basic logging and sniffing**
 	- Test the configs
 		- `snort -c path/to/config/file -T` - c gives path to config and T starts the test
 	- Sniffer mode
@@ -15,6 +15,10 @@
 			- also allows users to filter the binary log files. using Berkeley Packet Filters (BPF)
 			- `sudo snort -r logname.log 'udp and port 53'`
 		- -n : Specify the number of packets to be processed or read. Snort will stop after reading the specified number of packets.
+
+- **IDS/IPS mode** 
+	- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
+eyJoaXN0b3J5IjpbLTE1NDIzMzczNDMsMTYyNDYzMTQ5NCwtOT
+IyMjM3MDI3XX0=
 -->
