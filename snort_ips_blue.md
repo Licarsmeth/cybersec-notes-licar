@@ -27,9 +27,12 @@
 		- **cmg:** CMG style,  basic header details with payload in hex and text format.
 		- **None:** Disabling alerting. However, it still logs the traffic and creates a log file in binary dump format.
 	- IPS mode
+		- Snort IPS mode is activated with the `-Q-- daq afpacket` parameters
+		- `snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console` 
+		- You can also activate this mode by editing the Snort.conf file.
 		- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4OTg5MzAzMiw5MTYzMzIwNDksODY5Nz
-M2NTExLC03NTEyMTI4NiwtMTg4MTc2MDQ1OCwtMTU0MjMzNzM0
-MywxNjI0NjMxNDk0LC05MjIyMzcwMjddfQ==
+eyJoaXN0b3J5IjpbNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3Mz
+Y1MTEsLTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQz
+LDE2MjQ2MzE0OTQsLTkyMjIzNzAyN119
 -->
