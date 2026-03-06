@@ -14,7 +14,10 @@
 		- -r : Reading option: Review the logged events in Snort.
 			- also allows users to filter the binary log files. using Berkeley Packet Filters (BPF)
 			- `sudo snort -r logname.log 'udp and port 53'`
+			- --pcap-list=" " : Read pcaps provided in command (space separated).
+			- --pcap-show : Show pcap name on console during processing.
 		- -n : Specify the number of packets to be processed or read. Snort will stop after reading the specified number of packets.
+		- -q : quiet mode. hide stuff like banners and summary
 
 - **IDS/IPS mode** 
 	- -c : Remember to put the conf or rules file to be used
@@ -32,7 +35,7 @@
 		- You can also activate this mode by editing the Snort.conf file.
 		- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3Mz
-Y1MTEsLTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQz
-LDE2MjQ2MzE0OTQsLTkyMjIzNzAyN119
+eyJoaXN0b3J5IjpbMTc4NDM5MDE5OCw2MzkwMDExMTksOTE2Mz
+MyMDQ5LDg2OTczNjUxMSwtNzUxMjEyODYsLTE4ODE3NjA0NTgs
+LTE1NDIzMzczNDMsMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
 -->
