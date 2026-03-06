@@ -26,8 +26,10 @@
 		- **Console**: Provides fast style alerts on the console screen.
 		- **cmg:** CMG style,  basic header details with payload in hex and text format.
 		- **None:** Disabling alerting. However, it still logs the traffic and creates a log file in binary dump format.
+	- IPS mode
+		- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2MzMyMDQ5LDg2OTczNjUxMSwtNzUxMj
-EyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzczNDMsMTYyNDYzMTQ5
-NCwtOTIyMjM3MDI3XX0=
+eyJoaXN0b3J5IjpbMTE4OTg5MzAzMiw5MTYzMzIwNDksODY5Nz
+M2NTExLC03NTEyMTI4NiwtMTg4MTc2MDQ1OCwtMTU0MjMzNzM0
+MywxNjI0NjMxNDk0LC05MjIyMzcwMjddfQ==
 -->
