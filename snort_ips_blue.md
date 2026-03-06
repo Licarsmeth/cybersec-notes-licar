@@ -20,12 +20,13 @@
 	- -N : Disable logging.
 	- -D : Background mode.
 	- -A : Alert modes
-		- **Full:** Full alert mode, providing all possible information about the alert. This mode is also the default; once you use -A and don't specify a mode, Snort defaults to this mode. 
+		- **Full:** Full alert mode, providing all possible information about the alert. This mode is also the default; once you use -A and don't specify a mode, Snort defaults to this mode. (no output in console)
 		- *Fast mode displays the alert message, timestamp, source and destination IP addresses*, along with port numbers.
 		- **Console**: Provides fast style alerts on the console screen.
 		- **cmg:** CMG style,  basic header details with payload in hex and text format.
 		- **None:** Disabling alerting.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNT
-QyMzM3MzQzLDE2MjQ2MzE0OTQsLTkyMjIzNzAyN119
+eyJoaXN0b3J5IjpbODY5NzM2NTExLC03NTEyMTI4NiwtMTg4MT
+c2MDQ1OCwtMTU0MjMzNzM0MywxNjI0NjMxNDk0LC05MjIyMzcw
+MjddfQ==
 -->
