@@ -43,7 +43,9 @@
 			-   drop: Block and log the packet.
 			-   reject: Block the packet, log it, and terminate the packet session.
 		-   `tcp` → protocol (tcp, udp, icmp, ip)    
-			- 
+			- Note that Snort2 supports only these four protocol filters in the rules 
+			- But you can detect the application flows using port numbers and options
+			- Eg: if you want to detect FTP traffic, you cannot use the FTP keyword in the protocol field; instead, you can filter FTP traffic by investigating TCP traffic on port 21.
 		-   `any any` → source IP and port    
 		-   `->` → direction (`->` or `<-` or `<>`)    
 		-   `192.168.1.10 80` → destination IP and port    
@@ -57,9 +59,9 @@
 		-   `priority:1` -> priority level
 		- `reference:CVE-xxxx` -> reference, duh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNjc0MTQ1LDE0MjU3OTE2NjgsLTIwMT
-E3Mzc3MzcsMTQwNTA2NDUyLDE3ODQzOTAxOTgsNjM5MDAxMTE5
-LDkxNjMzMjA0OSw4Njk3MzY1MTEsLTc1MTIxMjg2LC0xODgxNz
-YwNDU4LC0xNTQyMzM3MzQzLDE2MjQ2MzE0OTQsLTkyMjIzNzAy
-N119
+eyJoaXN0b3J5IjpbLTEwODUwMzQ5NDEsMTQyNTc5MTY2OCwtMj
+AxMTczNzczNywxNDA1MDY0NTIsMTc4NDM5MDE5OCw2MzkwMDEx
+MTksOTE2MzMyMDQ5LDg2OTczNjUxMSwtNzUxMjEyODYsLTE4OD
+E3NjA0NTgsLTE1NDIzMzczNDMsMTYyNDYzMTQ5NCwtOTIyMjM3
+MDI3XX0=
 -->
