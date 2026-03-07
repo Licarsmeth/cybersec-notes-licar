@@ -43,6 +43,7 @@
 			-   drop: Block and log the packet.
 			-   reject: Block the packet, log it, and terminate the packet session.
 		-   `tcp` → protocol (tcp, udp, icmp, ip)    
+			- 
 		-   `any any` → source IP and port    
 		-   `->` → direction (`->` or `<-` or `<>`)    
 		-   `192.168.1.10 80` → destination IP and port    
@@ -56,8 +57,9 @@
 		-   `priority:1` -> priority level
 		- `reference:CVE-xxxx` -> reference, duh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTc5MTY2OCwtMjAxMTczNzczNywxND
-A1MDY0NTIsMTc4NDM5MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5
-LDg2OTczNjUxMSwtNzUxMjEyODYsLTE4ODE3NjA0NTgsLTE1ND
-IzMzczNDMsMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
+eyJoaXN0b3J5IjpbNzczNjc0MTQ1LDE0MjU3OTE2NjgsLTIwMT
+E3Mzc3MzcsMTQwNTA2NDUyLDE3ODQzOTAxOTgsNjM5MDAxMTE5
+LDkxNjMzMjA0OSw4Njk3MzY1MTEsLTc1MTIxMjg2LC0xODgxNz
+YwNDU4LC0xNTQyMzM3MzQzLDE2MjQ2MzE0OTQsLTkyMjIzNzAy
+N119
 -->
