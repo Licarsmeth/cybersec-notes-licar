@@ -60,6 +60,7 @@
 		-   `content:"string"` -> payload match    
 		-   `classtype:attempted-admin` -> category    
 		-   `priority:1` -> priority level
+		- id, flags (tcp flag), dsize (payload size), sameip -> non-payload detection rules
 		- `reference:CVE-xxxx` -> reference, duh
 	- Special cases: 
 		- `192.168.1.0/24` -> CIDR networks
@@ -71,9 +72,10 @@
 		    -   `1024:` (1024 and above)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDc0NDgyNSw1NjkwNzM1NjEsLTEwOD
-UwMzQ5NDEsMTQyNTc5MTY2OCwtMjAxMTczNzczNywxNDA1MDY0
-NTIsMTc4NDM5MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5LDg2OT
-czNjUxMSwtNzUxMjEyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzcz
-NDMsMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
+eyJoaXN0b3J5IjpbLTY3MzQ3NzU1MSwxMjE0NzQ0ODI1LDU2OT
+A3MzU2MSwtMTA4NTAzNDk0MSwxNDI1NzkxNjY4LC0yMDExNzM3
+NzM3LDE0MDUwNjQ1MiwxNzg0MzkwMTk4LDYzOTAwMTExOSw5MT
+YzMzIwNDksODY5NzM2NTExLC03NTEyMTI4NiwtMTg4MTc2MDQ1
+OCwtMTU0MjMzNzM0MywxNjI0NjMxNDk0LC05MjIyMzcwMjddfQ
+==
 -->
