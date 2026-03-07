@@ -52,7 +52,10 @@
 		-   `( ... )` -> options in key:value; pairs, separated by `;`
 	- Common options:
 		-   `msg:"text"` -> message in alert    
-		-   `sid:1000001` -> Snort rule ID (unique)    
+		-   `sid:1000001` -> Snort rule ID (unique)   
+			 -  `<100` : Reserved rules
+			-   `100-999,999` : Rules came with the build.
+			-   `>=1,000,000` : Rules created by user.
 		-   `rev:1` -> revision number    
 		-   `content:"string"` -> payload match    
 		-   `classtype:attempted-admin` -> category    
@@ -68,9 +71,9 @@
 		    -   `1024:` (1024 and above)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5MDczNTYxLC0xMDg1MDM0OTQxLDE0Mj
-U3OTE2NjgsLTIwMTE3Mzc3MzcsMTQwNTA2NDUyLDE3ODQzOTAx
-OTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1MTEsLTc1MT
-IxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQzLDE2MjQ2MzE0
-OTQsLTkyMjIzNzAyN119
+eyJoaXN0b3J5IjpbMTIxNDc0NDgyNSw1NjkwNzM1NjEsLTEwOD
+UwMzQ5NDEsMTQyNTc5MTY2OCwtMjAxMTczNzczNywxNDA1MDY0
+NTIsMTc4NDM5MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5LDg2OT
+czNjUxMSwtNzUxMjEyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzcz
+NDMsMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
 -->
