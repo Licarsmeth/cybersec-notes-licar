@@ -58,10 +58,16 @@
 		-   `classtype:attempted-admin` -> category    
 		-   `priority:1` -> priority level
 		- `reference:CVE-xxxx` -> reference, duh
+	- Special cases: 
+		- 192.168.1.0/24 -> CIDR networks
+		- 
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODUwMzQ5NDEsMTQyNTc5MTY2OCwtMj
-AxMTczNzczNywxNDA1MDY0NTIsMTc4NDM5MDE5OCw2MzkwMDEx
-MTksOTE2MzMyMDQ5LDg2OTczNjUxMSwtNzUxMjEyODYsLTE4OD
-E3NjA0NTgsLTE1NDIzMzczNDMsMTYyNDYzMTQ5NCwtOTIyMjM3
-MDI3XX0=
+eyJoaXN0b3J5IjpbLTE4OTEwNTg5NjMsLTEwODUwMzQ5NDEsMT
+QyNTc5MTY2OCwtMjAxMTczNzczNywxNDA1MDY0NTIsMTc4NDM5
+MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5LDg2OTczNjUxMSwtNz
+UxMjEyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzczNDMsMTYyNDYz
+MTQ5NCwtOTIyMjM3MDI3XX0=
 -->
