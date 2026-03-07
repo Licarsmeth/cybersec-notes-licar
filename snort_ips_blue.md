@@ -34,10 +34,23 @@
 			- You can also activate this mode by editing the Snort.conf file. 
 
 - **Rules**
-	- 
+	- Structure : `action protocol src_ip src_port direction dst_ip dst_port (options)`
+	- Example : `alert tcp any any -> 192.168.1.10 80 (msg:"Possible web attack"; content:"/admin"; sid:1000001; rev:1;)`
+	- Parts: 
+		-   `alert` → action (alert, log, pass, drop, reject, sdrop)
+    
+-   `tcp` → protocol (tcp, udp, icmp, ip)
+    
+-   `any any` → source IP and port
+    
+-   `->` → direction (`->` or `<-` or `<>`)
+    
+-   `192.168.1.10 80` → destination IP and port
+    
+-   `( ... )` → options in key:value; pairs, separated by `;`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTE3Mzc3MzcsMTQwNTA2NDUyLDE3OD
-QzOTAxOTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1MTEs
-LTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQzLDE2Mj
-Q2MzE0OTQsLTkyMjIzNzAyN119
+eyJoaXN0b3J5IjpbMTc5MTc5NzkzNywtMjAxMTczNzczNywxND
+A1MDY0NTIsMTc4NDM5MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5
+LDg2OTczNjUxMSwtNzUxMjEyODYsLTE4ODE3NjA0NTgsLTE1ND
+IzMzczNDMsMTYyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
 -->
