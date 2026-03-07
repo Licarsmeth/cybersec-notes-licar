@@ -1,5 +1,5 @@
 ## Snort
-- **Basics (testing, logging and sniffing)**
+- **Basic usage**
 	- Test the configs
 		- `snort -c path/to/config/file -T` - c gives path to config and T starts the test
 	- Sniffer mode
@@ -18,25 +18,23 @@
 			- --pcap-show : Show pcap name on console during processing.
 		- -n : Specify the number of packets to be processed or read. Snort will stop after reading the specified number of packets.
 		- -q : quiet mode. hide stuff like banners and summary
-
-- **IDS/IPS mode** 
-	- -c : Remember to put the conf or rules file to be used
-	- -N : Disable logging.
-	- -D : Background mode.
-	- -A : Alert modes
-		- **Full:** Full alert mode, providing all possible information about the alert. This mode is also the default; once you use -A and don't specify a mode, Snort defaults to this mode. (no output in console)
-		- *Fast mode displays the alert message, timestamp, source and destination IP addresses*, along with port numbers.
-		- **Console**: Provides fast style alerts on the console screen.
-		- **cmg:** CMG style,  basic header details with payload in hex and text format.
-		- **None:** Disabling alerting. However, it still logs the traffic and creates a log file in binary dump format.
-	- IPS mode
-		- Snort IPS mode is activated with the `-Q-- daq afpacket` parameters
-		- `snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console` 
-		- You can also activate this mode by editing the Snort.conf file.
-		- 
+	- IDS/IPS mode
+		- -c : Remember to put the conf or rules file to be used
+		- -N : Disable logging.
+		- -D : Background mode.
+		- -A : Alert modes
+			- **Full:** Full alert mode, providing all possible information about the alert. This mode is also the default; once you use -A and don't specify a mode, Snort defaults to this mode. (no output in console)
+			- *Fast mode displays the alert message, timestamp, source and destination IP addresses*, along with port numbers.
+			- **Console**: Provides fast style alerts on the console screen.
+			- **cmg:** CMG style,  basic header details with payload in hex and text format.
+			- **None:** Disabling alerting. However, it still logs the traffic and creates a log file in binary dump format.
+		- IPS mode
+			- Snort IPS mode is activated with the `-Q-- daq afpacket` parameters
+			- `snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console` 
+			- You can also activate this mode by editing the Snort.conf file. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTA2NDUyLDE3ODQzOTAxOTgsNjM5MD
-AxMTE5LDkxNjMzMjA0OSw4Njk3MzY1MTEsLTc1MTIxMjg2LC0x
-ODgxNzYwNDU4LC0xNTQyMzM3MzQzLDE2MjQ2MzE0OTQsLTkyMj
-IzNzAyN119
+eyJoaXN0b3J5IjpbLTEyNzcxMjAzODQsMTQwNTA2NDUyLDE3OD
+QzOTAxOTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1MTEs
+LTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQzLDE2Mj
+Q2MzE0OTQsLTkyMjIzNzAyN119
 -->
