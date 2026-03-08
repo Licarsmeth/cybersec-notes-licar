@@ -70,6 +70,7 @@
 		    -   `1024:65535` (1024 to 65535)      
 		    -   `:1023` (up to 1023)        
 		    -   `1024:` (1024 and above)
+		    - 
 - **Noteworthy side-chicks**
 	- Snort rule types
 		- Community rules -> Free, GPLv2, basic/older coverage, no license restrictions for normal use.
@@ -77,25 +78,23 @@
 		- Subscriber rules -> Paid, latest rules immediately, best/fastest coverage.
 
 	- Rule paths (snort.conf)
-		- `rule_path` -> Directory for normal text rules (`*local.rules`).
+		- `rule_path` -> Directory for normal text rules like local.rules (`*.rules`).
 		- `so_rule_path` -> Directory for shared object rules (`*.so` + stub `.rules`). 
 			- These are rules written in C and compiled into binary format. They are used to detect complex threats that standard text rules can't handle, such as obfuscated attacks or multi-step exploits.
 		- `preproc_rule_path` -> Directory for preprocessor rules (e.g., for HTTP, SSH preprocessors).  (`*.rules`)
 			- These rules are used by Snort’s preprocessors (like the HTTP or Frag3 engines) to detect anomalies in traffic _before_ the main detection engine sees them.
-		- Example:
-			var RULE_PATH rules
-			var SO_RULE_PATH so_rules
-			var PREPROC_RULE_PATH preproc_rules
+
 			
 	- DAQ and DAQ modules
 		-   DAQ -> Data Acquisition Library; abstraction layer Snort uses to grab packets.    
+			- Think of it as a **translator or a "bridge" between the Snort engine and your network hardware.Snort itself doesn’t know how to talk to your network card (NIC) directly; it relies on the DAQ to grab packets and hand them over in a format it understands.
 		-   Common DAQ modules:    
 			   -   `pcap` -> Standard libpcap capture (sniff only, no inline drop).        
 			   -   `afpacket` -> High‑performance, supports inline IPS on Linux.        
 			   -   `nfq` -> Uses Netfilter Queue (iptables) for inline IPS on Linux.        
 			   -   `dump` -> Writes packets to a file (debug/testing).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzcwMzQzOCwtMTQzMDgxOTY5MiwtNj
+eyJoaXN0b3J5IjpbMTgyNTg5NDYzOSwtMTQzMDgxOTY5MiwtNj
 czNDc3NTUxLDEyMTQ3NDQ4MjUsNTY5MDczNTYxLC0xMDg1MDM0
 OTQxLDE0MjU3OTE2NjgsLTIwMTE3Mzc3MzcsMTQwNTA2NDUyLD
 E3ODQzOTAxOTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1
