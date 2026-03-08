@@ -77,9 +77,11 @@
 		- Subscriber rules -> Paid, latest rules immediately, best/fastest coverage.
 
 	- Rule paths (snort.conf)
-		- `rule_path` -> Directory for normal text rules (`*.rules`).
+		- `rule_path` -> Directory for normal text rules (`*local.rules`).
 		- `so_rule_path` -> Directory for shared object rules (`*.so` + stub `.rules`). 
-		- `preproc_rule_path` -> Directory for preprocessor rules (e.g., for HTTP, SSH preprocessors).
+			- These are rules written in C and compiled into binary format. They are used to detect complex threats that standard text rules can't handle, such as obfuscated attacks or multi-step exploits.
+		- `preproc_rule_path` -> Directory for preprocessor rules (e.g., for HTTP, SSH preprocessors).  (`*.rules`)
+			- These rules are used by Snort’s preprocessors (like the HTTP or Frag3 engines) to detect anomalies in traffic _before_ the main detection engine sees them.
 		- Example:
 			var RULE_PATH rules
 			var SO_RULE_PATH so_rules
@@ -93,10 +95,10 @@
 			   -   `nfq` -> Uses Netfilter Queue (iptables) for inline IPS on Linux.        
 			   -   `dump` -> Writes packets to a file (debug/testing).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTA4NjEsLTE0MzA4MTk2OTIsLTY3Mz
-Q3NzU1MSwxMjE0NzQ0ODI1LDU2OTA3MzU2MSwtMTA4NTAzNDk0
-MSwxNDI1NzkxNjY4LC0yMDExNzM3NzM3LDE0MDUwNjQ1MiwxNz
-g0MzkwMTk4LDYzOTAwMTExOSw5MTYzMzIwNDksODY5NzM2NTEx
-LC03NTEyMTI4NiwtMTg4MTc2MDQ1OCwtMTU0MjMzNzM0MywxNj
-I0NjMxNDk0LC05MjIyMzcwMjddfQ==
+eyJoaXN0b3J5IjpbMTE2NzcwMzQzOCwtMTQzMDgxOTY5MiwtNj
+czNDc3NTUxLDEyMTQ3NDQ4MjUsNTY5MDczNTYxLC0xMDg1MDM0
+OTQxLDE0MjU3OTE2NjgsLTIwMTE3Mzc3MzcsMTQwNTA2NDUyLD
+E3ODQzOTAxOTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1
+MTEsLTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQzLD
+E2MjQ2MzE0OTQsLTkyMjIzNzAyN119
 -->
