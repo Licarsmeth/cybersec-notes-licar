@@ -93,12 +93,12 @@
 			   -   `afpacket` -> High‑performance, supports inline IPS on Linux.        
 			   -   `nfq` -> Uses Netfilter Queue (iptables) for inline IPS on Linux.        
 			   -   `dump` -> Writes packets to a file (debug/testing).
-			   - `inline` -> Used for "IPS mode" where packets pass through Snort like a bridge; if a rule triggers, Snort can physically stop the packet from reaching its destination.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODQxMDg4MiwtMTQzMDgxOTY5MiwtNj
-czNDc3NTUxLDEyMTQ3NDQ4MjUsNTY5MDczNTYxLC0xMDg1MDM0
-OTQxLDE0MjU3OTE2NjgsLTIwMTE3Mzc3MzcsMTQwNTA2NDUyLD
-E3ODQzOTAxOTgsNjM5MDAxMTE5LDkxNjMzMjA0OSw4Njk3MzY1
-MTEsLTc1MTIxMjg2LC0xODgxNzYwNDU4LC0xNTQyMzM3MzQzLD
-E2MjQ2MzE0OTQsLTkyMjIzNzAyN119
+eyJoaXN0b3J5IjpbNTQ2OTU5Mzg5LC0xNDMwODE5NjkyLC02Nz
+M0Nzc1NTEsMTIxNDc0NDgyNSw1NjkwNzM1NjEsLTEwODUwMzQ5
+NDEsMTQyNTc5MTY2OCwtMjAxMTczNzczNywxNDA1MDY0NTIsMT
+c4NDM5MDE5OCw2MzkwMDExMTksOTE2MzMyMDQ5LDg2OTczNjUx
+MSwtNzUxMjEyODYsLTE4ODE3NjA0NTgsLTE1NDIzMzczNDMsMT
+YyNDYzMTQ5NCwtOTIyMjM3MDI3XX0=
 -->
